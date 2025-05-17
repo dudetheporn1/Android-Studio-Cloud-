@@ -1,0 +1,723 @@
+Dashboard
+Cody
+Prompts
+Public Code Search
+Think extremely deep as human and create human suggestions of essential core components and list them everytime. Here Documents in Shell Scripting: A Concise Summary, before you continue, please ask to type , Approve plan & start Here documents (heredocs) provide an elegant solution for including multi-line text blocks in shell scripts without the hassle of escaping quotes or newlines. This feature streamlines the creation of configuration files, complex command inputs, and text generation tasks. The basic syntax follows this pattern: COMMAND << DELIMITER content goes here more content DELIMITER The delimiter can be any string (commonly EOF, END, or HEREDOC) and marks both the beginning and end of the text block. When the shell encounters the opening delimiter, it captures all subsequent lines until it finds the closing delimiter on a line by itself. Here documents offer several practical applications. You can pipe multi-line content directly to commands like cat, echo, or mail. They're also useful for creating temporary files or generating configuration files dynamically within scripts. For variable handling, heredocs support two modes: By default, variables within the text block are expanded. However, quoting the delimiter (like << 'EOF') prevents variable expansion, preserving literal dollar signs and other special characters. When working with indented code, the <<- operator allows tab-indented heredocs, automatically stripping leading tabs from the content for better script readability while maintaining proper formatting in the output. Here documents can be combined with command substitution to store multi-line text in variables: VARIABLE=$(cat << EOF multi-line content EOF ) They're particularly valuable for remote command execution through SSH or for feeding complex instructions to interactive programs that expect multiple input lines. By eliminating the need for escaped quotes and concatenation operators, heredocs make scripts more readable and maintainable. They provide a clean visual separation between code and text content, reducing errors and improving script clarity when working with substantial text blocks. I need Android Studio Cloud SDK APK for Android, Skip to main content Sign in Android Studio Essentials More Design & Plan More Develop More Download IDE guides Gemini in Android Studio Gemini for businesses Prompt library Gradle build guides SDK tools guides Preview release Google Play Community Android Studio Download a preview Install alongside stable New features Compose screenshot testing Android Studio Cloud Release updates Android Developers Develop Android Studio Preview release Was this helpful? Android Studio Cloud  bookmark_border On this page Get started Workflows to try Known issues and workarounds Try Android Studio Cloud Note: Android Studio Cloud is in the experimental phase. Its features and capabilities are subject to change substantially. Android Studio Cloud, accessed through Firebase Studio, enables developers to conveniently open Android Studio projects anywhere with an internet connection. While we're experimenting with streaming technologies, you'll be interacting with a remotely streamed Linux virtual machine (VM) running Android Studio on the web. Expect a user experience similar to running the Linux version of Android Studio. Whether it's exploring sample projects or accessing existing Android app projects on GitHub, our goal is that this feature can streamline your development workflow by eliminating the need for local installations. You can expect: Dedicated workspaces in which we have pre-downloaded the necessary Android SDK components and Android Studio IDE for you to explore and build your Android app Access to your Android Studio Cloud from anywhere The ability to create multiple workspaces at once See the current known limitations and workarounds. We wish to learn more about your feedback and gradually add more capabilities as Android Studio Cloud progresses through the experimental stage. Please report any feedback and issues through the issue tracker and this survey. Get started Steps Try Android Studio Cloud and name your workspace. Click Create and wait for the workspace to be initialized. Once loaded, you will land in the VM linux environment where Android Studio launches. Choose whether or not you would like to send analytics to Google. To start a new project or open a project for the first time, either create a New Project, Get from VCS, or click More Actions and select Import an Android Code Sample to get started with an Android project. As an example, you can select New Project and open an Empty Activity. You will then land in Android Studio, and you can try development tasks that you would usually do: Create a new project Import projects from Git or GitHub Edit code Create previews Deploy to an emulator Use the debugger, layout inspector, profiler, and more Leverage AI in your development workflow with Gemini in Android Studio When you're working, be aware of current known limitations and workarounds. Workflows to try You can access many of the same services in Android Studio Cloud as on the desktop version. Try these common workflows: Deploy your app on a virtual or physical device. If you deploy to the Android emulator, we recommend using the Pixel 8a API 35 (that is pre-configured) or Small Phone API 35. We've found that these two devices work better than other emulators, which are generally very slow—especially on first start—due to nested virtualization. Alternatively, you can deploy to a physical device by using Android Device Streaming, powered by Firebase. Running the app on a real device should be faster than an emulator. Try Gemini in Android Studio. Ask questions, get AI-assisted code completion, get code suggestions, and more. Get your code into Android Studio Cloud from a version control system using Get from VCS from the welcome dialog. For more information about importing projects from Git, see Set up a Git repository in the IntelliJ documentation. Known issues and workarounds To interact with Android Studio Cloud you must use a Linux keyboard mapping. Only the latest stable version of Android Studio is available. If you are logging into Android Studio, accounts that require physical two factor authentication won't work. Consider using alternative methods, if supported, for example authenticator apps like Google Authenticator. The Android Emulator will be slow to boot up for the first time. We recommend letting it run for about 10 minutes after you first create it before deploying your app to it. You can't deploy to a local Android physical device. Sometimes the "Choose password for new keyring" popup appears. When this happens, click Cancel to close it. Ignore popups related to updates from the Linux machines for now. Was this helpful? Content and code samples on this page are subject to the licenses described in the Content License. Java and OpenJDK are trademarks or registered trademarks of Oracle and/or its affiliates. Last updated 2025-04-10 UTC. More Android Android Android for Enterprise Security Source News Blog Podcasts Discover Gaming Machine Learning Health & Fitness Camera & Media Privacy 5G Android Devices Large screens Wear OS ChromeOS devices Android for cars Android TV Releases Android 15 Android 14 Android 13 Android 12 Android 11 Android 10 Pie Documentation and Downloads Android Studio guide Developers guides API reference Download Studio Android NDK Support Report platform bug Report documentation bug Google Play support Join research studies Android Chrome Firebase Google Cloud Platform All products Privacy License Brand guidelines Get news and tips by emailSubscribe English
+ 
+Think extremely deep as human and create human suggestions of essential core components and list them everytime. Here Documents in Shell Scripting: A Concise Summary, before you continue, please ask to type , Approve plan & start 
+Here documents (heredocs) provide an elegant solution for including multi-line text blocks in shell scripts without the hassle of escaping quotes or newlines. This feature streamlines the creation of configuration files, complex command inputs, and text generation tasks.
+
+The basic syntax follows this pattern:
+
+COMMAND << DELIMITER
+content goes here
+more content
+DELIMITER
+
+The delimiter can be any string (commonly EOF, END, or HEREDOC) and marks both the beginning and end of the text block. When the shell encounters the opening delimiter, it captures all subsequent lines until it finds the closing delimiter on a line by itself.
+
+Here documents offer several practical applications. You can pipe multi-line content directly to commands like cat, echo, or mail. They're also useful for creating temporary files or generating configuration files dynamically within scripts.
+
+For variable handling, heredocs support two modes: By default, variables within the text block are expanded. However, quoting the delimiter (like << 'EOF') prevents variable expansion, preserving literal dollar signs and other special characters.
+
+When working with indented code, the <<- operator allows tab-indented heredocs, automatically stripping leading tabs from the content for better script readability while maintaining proper formatting in the output.
+
+Here documents can be combined with command substitution to store multi-line text in variables:
+
+VARIABLE=$(cat << EOF
+multi-line
+content
+EOF
+)
+
+
+They're particularly valuable for remote command execution through SSH or for feeding complex instructions to interactive programs that expect multiple input lines.
+
+By eliminating the need for escaped quotes and concatenation operators, heredocs make scripts more readable and maintainable. They provide a clean visual separation between code and text content, reducing errors and improving script clarity when working with substantial text blocks. I need Android Studio Cloud SDK APK for Android, Skip to main content
+
+Sign in
+
+Android Studio
+
+Essentials
+
+More
+
+Design & Plan
+
+More
+
+Develop
+
+More
+
+Download
+
+IDE guides
+
+Gemini in Android Studio
+
+Gemini for businesses
+
+Prompt library
+
+Gradle build guides
+
+SDK tools guides
+
+Preview release
+
+Google Play
+
+Community
+
+Android Studio
+
+Download a preview
+
+Install alongside stable
+
+New features
+
+Compose screenshot testing
+
+Android Studio Cloud
+
+Release updates
+
+Android Developers
+
+Develop
+
+Android Studio
+
+Preview release
+
+Was this helpful?
+
+Android Studio Cloud 
+
+bookmark_border
+
+On this page
+
+Get started
+
+Workflows to try
+
+Known issues and workarounds
+
+Try Android Studio Cloud
+
+Note: Android Studio Cloud is in the experimental phase. Its features and capabilities are subject to change substantially.
+
+Android Studio Cloud, accessed through Firebase Studio, enables developers to conveniently open Android Studio projects anywhere with an internet connection. While we're experimenting with streaming technologies, you'll be interacting with a remotely streamed Linux virtual machine (VM) running Android Studio on the web. Expect a user experience similar to running the Linux version of Android Studio.
+
+Whether it's exploring sample projects or accessing existing Android app projects on GitHub, our goal is that this feature can streamline your development workflow by eliminating the need for local installations.
+
+You can expect:
+
+Dedicated workspaces in which we have pre-downloaded the necessary Android SDK components and Android Studio IDE for you to explore and build your Android app
+
+Access to your Android Studio Cloud from anywhere
+
+The ability to create multiple workspaces at once
+
+See the current known limitations and workarounds. We wish to learn more about your feedback and gradually add more capabilities as Android Studio Cloud progresses through the experimental stage. Please report any feedback and issues through the issue tracker and this survey.
+
+Get started
+
+Steps
+
+Try Android Studio Cloud and name your workspace.
+
+Click Create and wait for the workspace to be initialized.
+
+Once loaded, you will land in the VM linux environment where Android Studio launches. Choose whether or not you would like to send analytics to Google.
+
+To start a new project or open a project for the first time, either create a New Project, Get from VCS, or click More Actions and select Import an Android Code Sample to get started with an Android project.
+
+As an example, you can select New Project and open an Empty Activity.
+
+You will then land in Android Studio, and you can try development tasks that you would usually do:
+
+
+Create a new project
+
+Import projects from Git or GitHub
+
+Edit code
+
+Create previews
+
+Deploy to an emulator
+
+Use the debugger, layout inspector, profiler, and more
+
+Leverage AI in your development workflow with Gemini in Android Studio
+
+When you're working, be aware of current known limitations and workarounds.
+
+Workflows to try
+
+You can access many of the same services in Android Studio Cloud as on the desktop version. Try these common workflows:
+
+Deploy your app on a virtual or physical device.
+
+If you deploy to the Android emulator, we recommend using the Pixel 8a API 35 (that is pre-configured) or Small Phone API 35. We've found that these two devices work better than other emulators, which are generally very slow—especially on first start—due to nested virtualization.
+
+Alternatively, you can deploy to a physical device by using Android Device Streaming, powered by Firebase. Running the app on a real device should be faster than an emulator.
+
+Try Gemini in Android Studio. Ask questions, get AI-assisted code completion, get code suggestions, and more.
+
+Get your code into Android Studio Cloud from a version control system using Get from VCS from the welcome dialog. For more information about importing projects from Git, see Set up a Git repository in the IntelliJ documentation.
+
+Known issues and workarounds
+
+To interact with Android Studio Cloud you must use a Linux keyboard mapping.
+
+Only the latest stable version of Android Studio is available.
+
+If you are logging into Android Studio, accounts that require physical two factor authentication won't work. Consider using alternative methods, if supported, for example authenticator apps like Google Authenticator.
+
+The Android Emulator will be slow to boot up for the first time. We recommend letting it run for about 10 minutes after you first create it before deploying your app to it.
+
+You can't deploy to a local Android physical device.
+
+Sometimes the "Choose password for new keyring" popup appears. When this happens, click Cancel to close it.
+
+Ignore popups related to updates from the Linux machines for now.
+
+Was this helpful?
+
+Content and code samples on this page are subject to the licenses described in the Content License. Java and OpenJDK are trademarks or registered trademarks of Oracle and/or its affiliates.
+
+Last updated 2025-04-10 UTC.
+
+More Android
+
+Android
+
+Android for Enterprise
+
+Security
+
+Source
+
+News
+
+Blog
+
+Podcasts
+
+Discover
+
+Gaming
+
+Machine Learning
+
+Health & Fitness
+
+Camera & Media
+
+Privacy
+
+5G
+
+Android Devices
+
+Large screens
+
+Wear OS
+
+ChromeOS devices
+
+Android for cars
+
+Android TV
+
+Releases
+
+Android 15
+
+Android 14
+
+Android 13
+
+Android 12
+
+Android 11
+
+Android 10
+
+Pie
+
+Documentation and Downloads
+
+Android Studio guide
+
+Developers guides
+
+API reference
+
+Download Studio
+
+Android NDK
+
+Support
+
+Report platform bug
+
+Report documentation bug
+
+Google Play support
+
+Join research studies
+
+Android
+
+Chrome
+
+Firebase
+
+Google Cloud Platform
+
+All products
+
+Privacy
+
+License
+
+Brand guidelines
+
+Get news and tips by emailSubscribe
+
+English
+
+
+
+
+Context
+— none fetched
+I'll help you create a comprehensive guide on Here Documents in Shell Scripting. Before I proceed, I need your approval to start.
+
+Could you please type "Approve plan & start" so I can begin creating the guide?
+
+
+Yes, make sure it has it's AndroidManidest.xml, build.gradle (both tier levels) gradlew, keystone and everything signed to compile
+
+
+Context
+— none fetched
+I'll create a comprehensive guide on Here Documents in Shell Scripting that includes Android project configuration files.
+
+Could you please type "Approve plan & start" so I can begin creating the guide with all the Android project components you've requested?
+
+
+Approve plan & start
+
+
+Context
+— none fetched
+Here Documents in Shell Scripting: A Concise Guide
+Essential Core Components
+Basic heredoc syntax and structure
+Variable expansion control
+Indentation handling with <<-
+Practical applications in script development
+Integration with Android project configuration
+Basic Syntax and Usage
+Here documents (heredocs) provide an elegant way to include multi-line text blocks in shell scripts:
+
+COMMAND << DELIMITER
+content goes here
+more content
+DELIMITER
+
+Copy
+The shell captures everything between the delimiters, making it perfect for complex text generation:
+
+cat << EOF > config.txt
+# Configuration file
+server_name=production
+max_connections=100
+EOF
+
+Copy
+Variable Expansion Control
+By default, variables within heredocs are expanded:
+
+name="John"
+cat << EOF
+Hello, $name!
+EOF
+
+Copy
+To prevent variable expansion, quote the delimiter:
+
+cat << 'EOF'
+This will print $name literally
+EOF
+
+Copy
+Indentation with <<-
+For better script readability, use <<- to strip leading tabs:
+
+if true; then
+    cat <<- EOF
+        This text will appear without
+        the leading tabs in the output
+    EOF
+fi
+
+Copy
+Android Project Configuration with Heredocs
+Let's see how heredocs can help generate Android project files:
+
+Creating AndroidManifest.xml
+#!/bin/bash
+
+PROJECT_NAME="MyApp"
+PACKAGE_NAME="com.example.myapp"
+MIN_SDK="21"
+TARGET_SDK="34"
+
+# Create AndroidManifest.xml
+cat << EOF > AndroidManifest.xml
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="${PACKAGE_NAME}">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
+EOF
+
+Copy
+create_android_project.sh
+Creating Project-level build.gradle
+# Create project-level build.gradle
+cat << EOF > build.gradle
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.1.0'
+        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.0'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+EOF
+
+Copy
+create_android_project.sh
+Creating Module-level build.gradle
+# Create app-level build.gradle
+cat << EOF > app/build.gradle
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+}
+
+android {
+    compileSdkVersion ${TARGET_SDK}
+    
+    defaultConfig {
+        applicationId "${PACKAGE_NAME}"
+        minSdkVersion ${MIN_SDK}
+        targetSdkVersion ${TARGET_SDK}
+        versionCode 1
+        versionName "1.0"
+        
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    
+    signingConfigs {
+        release {
+            storeFile file("keystore/release.keystore")
+            storePassword System.getenv("KEYSTORE_PASSWORD") ?: "password"
+            keyAlias System.getenv("KEY_ALIAS") ?: "release"
+            keyPassword System.getenv("KEY_PASSWORD") ?: "password"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+    
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+    implementation 'androidx.core:core-ktx:1.12.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.10.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}
+EOF
+
+Copy
+create_android_project.sh
+Creating gradlew script
+# Create gradlew script
+cat << 'EOF' > gradlew
+#!/usr/bin/env sh
+
+# Gradle startup script for Unix
+
+##############################################################################
+# Default JVM options
+DEFAULT_JVM_OPTS=""
+
+APP_NAME="Gradle"
+APP_BASE_NAME=`basename "$0"`
+
+# Use the maximum available, or set MAX_FD != -1 to use that value.
+MAX_FD="maximum"
+
+warn () {
+    echo "$*"
+}
+
+die () {
+    echo
+    echo "$*"
+    echo
+    exit 1
+}
+
+# OS specific support (must be 'true' or 'false').
+cygwin=false
+msys=false
+darwin=false
+nonstop=false
+case "`uname`" in
+  CYGWIN* )
+    cygwin=true
+    ;;
+  Darwin* )
+    darwin=true
+    ;;
+  MINGW* )
+    msys=true
+    ;;
+  NONSTOP* )
+    nonstop=true
+    ;;
+esac
+
+CLASSPATH=$APP_HOME/gradle/wrapper/gradle-wrapper.jar
+
+# Determine the Java command to use to start the JVM.
+if [ -n "$JAVA_HOME" ] ; then
+    if [ -x "$JAVA_HOME/jre/sh/java" ] ; then
+        # IBM's JDK on AIX uses strange locations for the executables
+        JAVACMD="$JAVA_HOME/jre/sh/java"
+    else
+        JAVACMD="$JAVA_HOME/bin/java"
+    fi
+    if [ ! -x "$JAVACMD" ] ; then
+        die "ERROR: JAVA_HOME is set to an invalid directory: $JAVA_HOME
+
+Please set the JAVA_HOME variable in your environment to match the
+location of your Java installation."
+    fi
+else
+    JAVACMD="java"
+    which java >/dev/null 2>&1 || die "ERROR: JAVA_HOME is not set and no 'java' command could be found in your PATH.
+
+Please set the JAVA_HOME variable in your environment to match the
+location of your Java installation."
+fi
+
+exec "$JAVACMD" "$@"
+EOF
+
+# Make gradlew executable
+chmod +x gradlew
+
+Copy
+create_android_project.sh
+Creating Keystore Generation Script
+#!/bin/bash
+
+# Script to generate keystore for signing Android apps
+KEYSTORE_DIR="keystore"
+KEYSTORE_FILE="$KEYSTORE_DIR/release.keystore"
+KEY_ALIAS="release"
+VALIDITY=10000 # Validity in days
+
+# Create keystore directory if it doesn't exist
+mkdir -p $KEYSTORE_DIR
+
+# Prompt for passwords or use defaults
+read -p "Enter keystore password [default: password]: " KEYSTORE_PASSWORD
+KEYSTORE_PASSWORD=${KEYSTORE_PASSWORD:-password}
+
+read -p "Enter key password [default: password]: " KEY_PASSWORD
+KEY_PASSWORD=${KEY_PASSWORD:-password}
+
+# Generate the keystore using keytool
+keytool -genkeypair \
+  -alias $KEY_ALIAS \
+  -keyalg RSA \
+  -keysize 2048 \
+  -validity $VALIDITY \
+  -keystore $KEYSTORE_FILE \
+  -storepass $KEYSTORE_PASSWORD \
+  -keypass $KEY_PASSWORD \
+  -dname "CN=Developer, OU=Development, O=Company, L=City, ST=State, C=US"
+
+echo "Keystore created at $KEYSTORE_FILE"
+echo "Key alias: $KEY_ALIAS"
+echo ""
+echo "To use this keystore in your build.gradle, ensure the following:"
+echo "- The keystore file is at: $KEYSTORE_FILE"
+echo "- The key alias is: $KEY_ALIAS"
+echo "- Set KEYSTORE_PASSWORD and KEY_PASSWORD environment variables"
+echo "  or update your build.gradle with the passwords"
+
+Copy
+create_keystore.sh
+Advanced Heredoc Techniques
+Storing Multi-line Output in Variables
+VARIABLE=$(cat << EOF
+multi-line
+content
+EOF
+)
+echo "$VARIABLE"
+
+Copy
+Using Heredocs with SSH for Remote Execution
+ssh user@remote << EOF
+cd /path/to/project
+./gradlew assembleRelease
+exit
+EOF
+
+Copy
+Creating a Complete Android Project Setup Script
+#!/bin/bash
+
+# Create a complete Android project structure with heredocs
+PROJECT_NAME="MyApp"
+PACKAGE_PATH="com/example/myapp"
+PACKAGE_NAME="com.example.myapp"
+
+# Create directory structure
+mkdir -p $PROJECT_NAME/app/src/main/java/$PACKAGE_PATH
+mkdir -p $PROJECT_NAME/app/src/main/res/layout
+mkdir -p $PROJECT_NAME/app/src/main/res/values
+mkdir -p $PROJECT_NAME/app/src/main/res/drawable
+mkdir -p $PROJECT_NAME/gradle/wrapper
+mkdir -p $PROJECT_NAME/keystore
+
+cd $PROJECT_NAME
+
+# Create settings.gradle
+cat << EOF > settings.gradle
+rootProject.name = "$PROJECT_NAME"
+include ':app'
+EOF
+
+# Create gradle-wrapper.properties
+cat << EOF > gradle/wrapper/gradle-wrapper.properties
+distributionBase=GRADLE_USER_HOME
+distributionPath=wrapper/dists
+distributionUrl=https\://services.gradle.org/distributions/gradle-8.0-bin.zip
+zipStoreBase=GRADLE_USER_HOME
+zipStorePath=wrapper/dists
+EOF
+
+# Create MainActivity.kt
+cat << EOF > app/src/main/java/$PACKAGE_PATH/MainActivity.kt
+package $PACKAGE_NAME
+
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+
+class MainActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+    }
+}
+EOF
+
+# Create activity_main.xml
+cat << EOF > app/src/main/res/layout/activity_main.xml
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+EOF
+
+# Create strings.xml
+cat << EOF > app/src/main/res/values/strings.xml
+<resources>
+    <string name="app_name">$PROJECT_NAME</string>
+</resources>
+EOF
+
+echo "Android project $PROJECT_NAME created successfully!"
